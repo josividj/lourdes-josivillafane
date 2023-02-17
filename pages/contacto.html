@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logo-200x125px.png" alt="Logo del sitio">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/lugares.html">Lugares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/oraciones.html">Oraciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hoja_contacto">
+        <h2 class="centrado">Cómo llegar</h2>
+        <img src="../img/icons8-hand-right-50.png" alt="mano derecha">
+        <div class="map-frame">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.3374439626386!2d-0.06048078546186046!3d43.097422896209956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd57d69e4e7e1967%3A0xa40981de7e97a5c5!2sSanctuaires%20Notre-Dame%20de%20Lourdes!5e0!3m2!1sen!2sar!4v1674731369176!5m2!1sen!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+    <div class="contacto">
+        <h2>Contacto</h2>
+        <form action=" ">
+            <fieldset>
+                <legend>DEJANOS TUS DATOS</legend>
+                <div class="nombre">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                </div>
+                <div class="email">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="estado">
+                    <label for="est_civ">Estado Civil</label>
+                    <select name="est_civ" id="est_civ">
+                        <option value="sol">Soltero/a</option>
+                        <option value="cas">Casado/a</option>
+                        <option value="div">Divorciado/a</option>
+                        <option value="otr">Otro</option>
+                    </select>
+                </div>
+                <div class="nota">
+                    <label for="note">¿Desea recibir nuestro newsletter?</label>
+                    <input type="checkbox" name="note" id="note">
+                    <label for="note">Sí</label>
+                    <input type="checkbox" name="note" id="note">
+                    <label for="note">No</label>
+                </div>
+                <div class="comentario">
+                    <h4>Nos gustaría conocer tu experiencia</h4>
+                    <textarea name="com" id="com" cols="50" rows="5" placeholder="Contanos qué te pareció"></textarea>
+                </div>
+                <div class="botones">
+                    <input type="reset" value="Borrar todo">
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com/sanctuairedelourdes" target="_blank"><img class="icon"
+                    src="../img/icons8-facebook.svg" alt="facebook"></a>
+
+            <a href="https://www.instagram.com/sanctuairedelourdes/" target="_blank"><img class="icon"
+                    src="../img/icons8-instagram.svg" alt="instagram"></a>
+
+            <a href="https://twitter.com/lourdes_france
+            " target="_blank"><img class="icon" src="../img/icons8-twitter.svg" alt="twitter"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>

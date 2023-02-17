@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,400;0,600;1,400;1,600&family=Solitreo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blanchedalmond;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------------------ */
+/* index html  */
+/* ------------------------------------------ */
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.remarcado {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.navbar{
+    background-color: lightblue;
+    font-family: 'Solitreo', cursive;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: lightblue;
+    margin: 1px;
+    padding: 10px;
+}
+
+.principal {
+    max-width: 80%;
+    max-height: 60%;
+    margin: 20px auto;
+    padding: 20px 10px 20px;
+    border: 1px solid #dadada;
+    border-radius: 5px
+}
+
+.principal img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* ------------- */
+/* historia html */
+/* ------------- */
+
+.titulo {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.primeraParte {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.5em;
+    grid-template-areas:
+        "a1 a2 a3"
+        "a1 a4 a5";
+    padding: 0.5em;
+    width: 100vw;
+}
+
+.a1 {
+    grid-area: a1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 80%;
+    background-color: rgb(233, 218, 196)
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0.1em;
+}
+
+.bernardita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bernardita img {
+    width: 100%;
+    border: 1px solid rgb(233, 218, 196);
+}
+
+.bernardita h3 {
+    font-size: 15px;
+}
+
+.texto {
+    width: 55%;
+    padding: 1.5rem 1.5rem 2rem 0.5rem;
+    position: relative;
+    z-index: 3;
+    transition: all 3s;
+}
+
+.texto:hover {
+    transform: rotate(360deg) scale(1.6) translate(100px);
+    background-color: orange;
+}
+
+.a2 {
+    grid-area: a2;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    transition: all 3s;
+}
+
+.a2:hover {
+    transform: scale(1.8) translate(100px);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.segunda {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(33, 37, 41, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: all 3s;
+}
+
+.a2 .segunda .caption-content {
+    color: black;
+    font-size: 14px;
+    margin: 0rem 2rem 1rem;
+}
+
+.a2 .segunda .caption-content:hover {
+    color: #bdcfd4;
+    font-weight: 700;
+    text-align: center;
+    opacity: 1;
+}
+
+.italic {
+    font-style: italic;
+}
+
+h4,
+h5 {
+    text-align: center;
+}
+
+.a2 img,
+.a3 img,
+.a4 img {
+    object-fit: cover;
+}
+
+.a3 {
+    grid-area: a3;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 3s;
+}
+
+.a3:hover {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tercera {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(33, 37, 41, 0.2);
+    top: 0;
+    bottom: 0;
+    transition: all 3s;
+}
+
+.a3 .tercera .caption-content {
+    color: transparent;
+    font-size: 14px;
+    margin: 2rem 2rem 1rem;
+}
+
+.a3 .tercera .caption-content:hover {
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    margin-top: 1rem;
+    opacity: 1;
+}
+
+.a4 {
+    grid-area: a4;
+    margin-top: 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(33, 37, 41, 0.2);
+    z-index: 1;
+}
+
+.a5 {
+    grid-area: a5;
+    margin-top: 0;
+    background-color: rgba(33, 37, 41, 0.2);
+}
+
+.a5 h4 {
+    margin-top: 1rem;
+}
+
+.a5 p {
+    font-family: 'Solitreo', cursive;
+    font-size: medium;
+    padding: 0rem 2rem;
+}
+
+.segundaParte {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 16em;
+    gap: 1.5em;
+    grid-template-areas:
+        "a6 a7 a8";
+    padding: 1.5em;
+}
+
+.a6 {
+    grid-area: a6;
+    margin: 0 auto auto;
+}
+
+.a7 {
+    grid-area: a7;
+    margin: 0 auto auto;
+}
+
+.a8 {
+    grid-area: a8;
+    margin: auto;
+}
+
+.vista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.a6 .italic,
+.a7 .italic,
+.a8 .italic {
+    font-style: italic;
+    text-align: center;
+}
+
+/* ------------ */
+/* lugares html */
+/* ------------ */
+
+.padreLugares {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "inmaculada rosario sanpio";
+    gap: 20px;
+
+}
+
+.lug1 {
+    grid-area: inmaculada;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.lug1 img {
+    width: 300px;
+    height: 250px;
+    border: 4px solid black;
+    margin: 10px;
+}
+
+.lug1 div {
+    width: 370px;
+    margin: 10px;
+}
+
+.lug1 div,
+.lug3 div {
+    margin-bottom: 10px;
+}
+
+.lug2 {
+    grid-area: rosario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.lug2 img {
+    width: 300px;
+    height: 250px;
+    border: 4px solid black;
+    margin: 10px;
+}
+
+.lug2 div {
+    width: 370px;
+    margin: 10px;
+}
+
+.lug3 {
+    grid-area: sanpio;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.lug3 img {
+    width: 300px;
+    height: 250px;
+    border: 4px solid black;
+    margin: 10px;
+}
+
+.lug3 div {
+    width: 370px;
+    margin: 10px;
+}
+
+/* -------------- */
+/* oraciones html */
+/* -------------- */
+
+.padreOraciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.padreOraciones img {
+    width: 300px;
+    margin: 40px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 10px solid rgb(212, 58, 192);
+}
+
+.padreOraciones p {
+    font-size: 20px;
+    width: auto
+}
+
+.rezar {
+    width: 90vw;
+    padding: 20px;
+    margin: 20px;
+    border: 10px solid rgb(212, 58, 192);
+}
+
+/* ---------------- */
+/* actividades html */
+/* ---------------- */
+
+.bloque1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border: 5px solid brown;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+thead{
+    border-bottom: 5px solid brown;
+}
+
+.separar {
+    padding: 10px;
+}
+
+.video {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-bottom: 3px;
+    border: 10px solid rgb(212, 58, 192);
+
+}
+
+/* ------------- */
+/* contacto html */
+/* ------------- */
+
+.hoja_contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.map-frame iframe {
+    margin: -7px;
+}
+
+.map-frame {
+    margin-top: 10px;
+    border: 5px solid lightblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    overflow: hidden;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid lightblue; 
+}
+
+form {
+    display: inline-block;
+    padding: 20px;
+}
+
+fieldset {
+    padding: 15px;
+}
+
+fieldset .nombre {
+    padding-bottom: 15px;
+}
+
+fieldset .email {
+    padding-bottom: 15px;
+}
+
+fieldset .estado {
+    padding-bottom: 15px;
+}
+
+fieldset .nota {
+    padding-bottom: 15px;
+}
+
+fieldset .comentario {
+    padding-bottom: 15px;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* breakpoint valor máximo para desktop */
+@media screen and (max-width: 992px) {
+
+    /* para página inicio */
+    li img {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    /* para página contacto */
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 10px solid lightblue; 
+    }
+
+    form{
+        padding: 10px;
+    }
+
+    .contacto fieldset{
+        padding: 10px;
+        border: 2px solid #ccc;
+    }
+
+    .comentario h4{
+        text-align: left;
+    }
+}
+
+/* breakpoint valor máximo para tablet */
+@media screen and (max-width: 768px) {
+
+    /* para página inicio */
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 33px;
+    }
+
+    /* para página actividades */
+    .video iframe {
+        width: 600px;
+        height: 417px;
+    }
+
+    /* para página contacto */
+    .hoja_contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border: 10px solid lightblue
+    }
+
+    .hoja_contacto h2{
+        font-size: 20px;
+    }
+
+    .hoja_contacto img{
+        width: 40px;
+    }
+
+    .hoja_contacto iframe{
+        width: 400px;
+        height: 350px;
+    }
+}
+
+/* breakpoint valor máximo para celulares */
+@media screen and (max-width: 500px) {
+
+    /* para página inicio */
+    li img {
+        width: 50px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    /* para página actividades */
+    table {
+        width: 200px;
+        height: 150px;
+        margin-top: 45px;
+    }
+
+    .video iframe {
+        width: 70vw;
+    }
+
+    /* para página contacto */
+    .hoja_contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .hoja_contacto h2{
+        font-size: 15px;
+    }
+
+    .navbar img{
+        width: 100px;
+    }
+
+    .hoja_contacto iframe{
+        width: 300px;
+        height: 250px;
+    }
+
+    .pagina_contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0px;
+        
+    }
+
+    form{
+        padding: 10px;
+    }
+
+    .contacto fieldset{
+        padding: 5px;
+        border: 2px solid #ccc;
+    }
+
+    .comentario h4{
+        text-align: left;
+    }
+
+}
+
+
+
